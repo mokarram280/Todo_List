@@ -56,4 +56,13 @@ const editButtons = document.querySelectorAll("#edit");
      taskCount += 1;
 displayCount(taskCount);
 inputText.value = "";
+
+};
+
+btn.addEventListener('click', addTask);
+
+window.onload = ()=>{
+    taskCount = 0;
+    displayCount(taskCount);
+    inputText.value = "";
 };

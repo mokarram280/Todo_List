@@ -28,4 +28,15 @@ const addTask = ()=>{
         <i class="fa-solid fa-trash"></i>
     </button>
 </div>`;
+
+taskContainer.insertAdjacentHTML("beforeend",task);
+const deleteButton = document.querySelectorAll("#delete");
+deleteButton.forEach((button)=>{
+    button.onclick = ()=>{
+        button.parentNode.remove();
+        taskCount -= 1;
+        displayCount(taskCount);
+    }
+});
+
 };

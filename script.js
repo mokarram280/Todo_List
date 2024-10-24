@@ -52,4 +52,8 @@ const editButtons = document.querySelectorAll("#edit");
             displayCount(taskCount);
         };
      });
+
+     taskCount += 1;
+displayCount(taskCount);
+inputText.value = "";
 };

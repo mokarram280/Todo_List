@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/style.css">
+    <title>To-Do List</title>
+</head>
+<body class="bg-orange-300">
+
+
+
+    <div class="container mx-auto w-1/4">
+        <div class="bg-red-500 py-4 px-6 mt-32 rounded-md">
+            <div class="text-center">
+                <h1 class="text-center text-white text-3xl font-bold mb-4">To Do List!</h1>
+                <div>
+                    <input type="text" id="inputText" class="border border-green-500 rounded-md py-1 px-2 outline-0 hover:shadow-lg" placeholder="Add your task...">
+                    <button id="btn" class="py-1 px-2 bg-green-400 rounded-md font-bold text-white hover:scale-105 transition">ADD</button>
+                </div>
+                <div id="tasks">
+                    <p id="pendingTask" class="my-4 text-white">You have <span id="countValue">0</span> task(s) to complete</p>
+                </div>
+            </div>       
+        </div>
+        <p id="error" class="text-center text-white bg-red-400 py-1 mt-3 rounded-md">Input field is empty</p>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

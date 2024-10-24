@@ -5,15 +5,21 @@
 
 @layer components {
     .task {
-        @apply bg-white grid grid-cols-3 justify-between rounded-md py-1 px-2;
+        @apply bg-white rounded-md py-4 px-4 mt-2 relative;
     }
     #taskName {
-        @apply bg-green-400 text-start w-full
+        @apply  absolute start-2 top-1;
     }
     #edit {
-        @apply text-center bg-slate-500 w-1/4 ml-32
+        @apply absolute end-8 top-1;
     }
     #delete {
-        @apply bg-red-300 text-center w-1/4 ml-16
+        @apply absolute end-2 top-1;
+    }
+    #edit:hover{
+        @apply text-blue-500 transition;
+    }
+    #delete:hover{
+        @apply text-red-500 transition;
     }
 }

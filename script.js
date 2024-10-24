@@ -39,4 +39,17 @@ deleteButton.forEach((button)=>{
     }
 });
 
+const editButtons = document.querySelectorAll("#edit");
+     editButtons.forEach((editBtn)=>{
+        editBtn.onclick = (e) =>{
+            let targetElement = e.target;
+            if(!(e.target.className == "edit")) {
+                targetElement = e.target.parentElement;
+            }
+            inputText.value = targetElement.previousElementSibling?.innerText;
+            targetElement.parentNode.remove();
+            taskCount -= 1;
+            displayCount(taskCount);
+        };
+     });
 };

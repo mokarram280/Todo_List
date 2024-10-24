@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+    .task {
+        @apply bg-white grid grid-cols-3 justify-between rounded-md py-1 px-2;
+    }
+    #taskName {
+        @apply bg-green-400 text-start w-full
+    }
+    #edit {
+        @apply text-center bg-slate-500 w-1/4 ml-32
+    }
+    #delete {
+        @apply bg-red-300 text-center w-1/4 ml-16
+    }
+}

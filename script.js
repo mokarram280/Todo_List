@@ -19,4 +19,13 @@ const addTask = ()=>{
         return;
     }
 
+    const task = `<div class="task">
+    <span id="taskName">${taskName}</span>
+    <button id="edit">
+        <i class="fa-solid fa-pen-to-square"></i>
+    </button>
+    <button id="delete">
+        <i class="fa-solid fa-trash"></i>
+    </button>
+</div>`;
 };
